@@ -1,8 +1,8 @@
 <template>
   <div >
-        <app-header></app-header>
+        <app-header v-bind:title="title"></app-header>
         <app-firstVue v-bind:languages="languages" ></app-firstVue>
-        <app-footer></app-footer>
+        <app-footer v-bind:title="title"></app-footer>
       </div>    
 </template>
 
@@ -22,7 +22,7 @@ export default {
   
   data(){
     return{
-      title:'my first vue app',
+      title:'My training',
        languages:[ 
           {id:1,text:'java',degree:'medium1'},
           {id:2,text:'php',degree:'meduim2'},

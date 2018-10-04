@@ -1,11 +1,15 @@
 <template>
 <footer>
- <h1>{{copyrigth}}</h1>
+ <h1>{{copyrigth}}:{{title}}</h1>
 </footer>
   </template>
 
 <script>
 export default {
+  props:
+  {title:{
+    type:String
+  }},
   data(){
     return {
       copyrigth:"copyrigth 2018"

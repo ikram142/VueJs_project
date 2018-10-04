@@ -1,10 +1,16 @@
 <template>
   <div id="languages">
-    <ul>
-    <li v-for="lg in languages"   :key="lg.id" >
+   
+    <div v-for="(lg,index) in languages"   :key="lg.id" >
      <h3>{{lg.text}}</h3> 
      <p >{{lg.degree}} </p>
-      </li></ul></div>
+      
+      <input type="text" name="languages" v-model="lg.value"></div>
+      <button v-on:click="addLg">ajouter language</button> 
+           <button v-on:click="deleteLg(index)">delete language</button>
+
+
+      </div>
   </template>
 
 <script>
@@ -13,10 +19,20 @@ export default {
   props:['languages'],
   data(){
     return {
-      languages:Array,
+     
+      Type:Array,
       required:true
        
            }
+  },
+  methods:{
+    deleteLg:function (index) {
+      this.languages.splice(index,1)
+          },
+    addLg:function(){
+    
+          }
+
   }
 }
 </script>

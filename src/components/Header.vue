@@ -1,15 +1,24 @@
 <template>
 <header>
- <h2>{{header}}</h2>
+ <h2  v-on:click="changeTitle">{{title}}</h2>
   </header>
   </template>
 
 <script>
 export default {
+  props:{
+    title:{
+        type:String
+  }},
   data(){
     return {
-      header:"header tilte"
+      type:String
            }
+  },
+  methods:{
+    changeTitle:function(){
+      this.title="new Title"
+    }
   }
 }
 </script>
