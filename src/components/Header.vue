@@ -17,7 +17,7 @@ export default {
   },
   methods:{
     changeTitle:function(){
-      this.title="new Title"
+      this.$emit('changeTitle',"new Title")
     }
   }
 }

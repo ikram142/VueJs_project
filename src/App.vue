@@ -1,6 +1,6 @@
 <template>
   <div >
-        <app-header v-bind:title="title"></app-header>
+        <app-header v-bind:title="title" v-on:changeTilte="updatetitle($event)"></app-header>
         <app-firstVue v-bind:languages="languages" ></app-firstVue>
         <app-footer v-bind:title="title"></app-footer>
       </div>    
@@ -28,6 +28,11 @@ export default {
           {id:2,text:'php',degree:'meduim2'},
           {id:3,text:'C++',degree:'meduim3'}]
 
+    }
+  },
+  methods:{
+    updateTitle:function(){
+      this.title=updateTitle
     }
   }
 }
