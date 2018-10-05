@@ -1,7 +1,7 @@
 <template>
   <div id="languages">
    
-    <div v-for="(lg,index) in languages"   :key="lg.id" >
+    <div v-for="(index,lg) in languages"   :key="lg.id" >
      <h3>{{lg.text}}</h3> 
      <p >{{lg.degree}} </p>
       

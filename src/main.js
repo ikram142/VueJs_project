@@ -4,9 +4,13 @@ import Vue from 'vue'
 import App from './App'
 
 
+export const bus=new Vue();
+
+
 /*Vue.component('first-component',FirstVue)*/
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   render:h=>h(App)
