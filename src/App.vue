@@ -3,20 +3,26 @@
         <app-header v-bind:title="title" v-on:changeTilte="updatetitle($event)"></app-header>
         <app-firstVue v-bind:languages="languages" ></app-firstVue>
         <app-footer v-bind:title="title"></app-footer>
+        <app-hooks></app-hooks>
       </div>    
 </template>
 
 <script>
+import Hooks from './components/Hooks.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import FirstVue from './components/FirstVue.vue'
 
 
+
 export default {
+  
   components:{
+
     'app-header':Header,
     'app-footer': Footer,
-    'app-firstVue':FirstVue
+    'app-firstVue':FirstVue,
+    'app-hooks':Hooks
 
   },
   
@@ -32,7 +38,7 @@ export default {
   },
   methods:{
     updateTitle:function(){
-      this.title=updateTitle
+      this.title='updateTitle'
     }
   }
 }

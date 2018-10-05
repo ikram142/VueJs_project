@@ -33,6 +33,21 @@ export default {
     
           }
 
+  },
+  
+beforeMount() {
+    alert(`this.$el doesn't exist yet, but it will soon!`)
+  },
+  Mount() {
+    alert(`mounted!`)
+  },
+  beforeUpdate(){
+        alert(`tbefore update`)
+
+  },
+  Update(){
+        alert(`updated!`)
+
   }
 }
 </script>
