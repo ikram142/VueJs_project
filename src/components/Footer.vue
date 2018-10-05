@@ -34,8 +34,5 @@ footer
     width: 100%;
    
     }
-h1{ 
-    color: lightpink;
-    text-align: center;
-} 
+
 </style>

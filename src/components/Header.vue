@@ -27,9 +27,7 @@ export default {
 }
 </script>
 <style>
-header
-{   background: lightpink;
-    padding: 10px;}
+
 h2{ color: black;
 text-align: center;
 } 

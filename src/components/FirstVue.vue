@@ -1,7 +1,7 @@
 <template>
   <div id="languages">
    
-    <div v-for="(index,lg) in languages"   :key="lg.id" >
+    <div v-for="(lg,index) in languages"   :key="lg.id" >
      <h3>{{lg.text}}</h3> 
      <p >{{lg.degree}} </p>
       
@@ -36,17 +36,17 @@ export default {
   },
   
 beforeMount() {
-    alert(`this.$el doesn't exist yet, but it will soon!`)
+   // alert(`this.$el doesn't exist yet, but it will soon!`)
   },
   Mount() {
-    alert(`mounted!`)
+   // alert(`mounted!`)
   },
   beforeUpdate(){
-        alert(`tbefore update`)
+    //    alert(`tbefore update`)
 
   },
   Update(){
-        alert(`updated!`)
+       // alert(`updated!`)
 
   }
 }
